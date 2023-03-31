@@ -1,12 +1,12 @@
 <a href="https://opensource.newrelic.com/oss-category/#new-relic-experimental"><picture><source media="(prefers-color-scheme: dark)" srcset="https://github.com/newrelic/opensource-website/raw/main/src/images/categories/dark/Experimental.png"><source media="(prefers-color-scheme: light)" srcset="https://github.com/newrelic/opensource-website/raw/main/src/images/categories/Experimental.png"><img alt="New Relic Open Source experimental project banner." src="https://github.com/newrelic/opensource-website/raw/main/src/images/categories/Experimental.png"></picture></a>
 
-# FY24SKO-Prometheus-Agent-Instruqt
+# Prometheus-Agent-Instruqt
 
 This is supplemental material related to the Prometheus Agent for Kubernetes Instruqt Lab.
 
 ## Background
 
-The ability to run Prometheus Server in "Agent Mode" was released with Prometheus Server v2.32.0.  You can read more about it [here](https://prometheus.io/blog/2021/11/16/agent/#prometheus-agent-mode).  Subsequently, New Relic released the [Prometheus Configurator](https://github.com/newrelic/newrelic-prometheus-configurator) which is a configuration layer around the Prometheus Agent that automatically configures remote write to New Relic and default scrape jobs.
+The ability to run Prometheus Server in "Agent Mode" was released with Prometheus Server `v2.32.0`.  You can read more about it [here](https://prometheus.io/blog/2021/11/16/agent/#prometheus-agent-mode).  Subsequently, New Relic released the [Prometheus Configurator](https://github.com/newrelic/newrelic-prometheus-configurator) which is a configuration layer around the Prometheus Agent that automatically configures remote write to New Relic and default scrape jobs.
 
 Learn more about the Prometheus Agent in [our documentation](https://docs.newrelic.com/docs/infrastructure/prometheus-integrations/install-configure-prometheus-agent/setup-prometheus-agent/).
 
@@ -37,7 +37,7 @@ This lab is delivered in the Instruqt platform and all instructions are containe
 
 ## Contributing
 
-We encourage your contributions to improve **FY24SKO-Prometheus-Agent-Instruqt**! Keep in mind when you submit your pull request, you'll need to sign the CLA via the click-through using CLA-Assistant. You only have to sign the CLA one time per project.
+We encourage your contributions to improve **Prometheus-Agent-Instruqt**! Keep in mind when you submit your pull request, you'll need to sign the CLA via the click-through using CLA-Assistant. You only have to sign the CLA one time per project.
 If you have any questions, or to execute our corporate CLA, required if your contribution is on behalf of a company,  please drop us an email at opensource@newrelic.com.
 
 **A note about vulnerabilities**
@@ -48,4 +48,4 @@ If you believe you have found a security vulnerability in this project or any of
 
 ## License
 
-**FY24SKO-Prometheus-Agent-Instruqt** is licensed under the [Apache 2.0](http://apache.org/licenses/LICENSE-2.0.txt) License.
+**Prometheus-Agent-Instruqt** is licensed under the [Apache 2.0](http://apache.org/licenses/LICENSE-2.0.txt) License.
