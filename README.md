@@ -6,7 +6,7 @@ This is supplemental material related to the Prometheus Agent for Kubernetes Ins
 
 ## Background
 
-The ability to run Prometheus Server in "Agent Mode" was released with Prometheus Server v2.32.0.  You can read more about it [here](https://prometheus.io/blog/2021/11/16/agent/#prometheus-agent-mode).  Subsequently, New Relic released the [Prometheus Configurator](https://github.com/newrelic/newrelic-prometheus-configurator) which is a configuration layer around the Prometheus Agent that automatically configures remote write to New Relic and enables the `integrations_filter` feature, which makes configuring scrape targets a little bit easier.  
+The ability to run Prometheus Server in "Agent Mode" was released with Prometheus Server v2.32.0.  You can read more about it [here](https://prometheus.io/blog/2021/11/16/agent/#prometheus-agent-mode).  Subsequently, New Relic released the [Prometheus Configurator](https://github.com/newrelic/newrelic-prometheus-configurator) which is a configuration layer around the Prometheus Agent that automatically configures remote write to New Relic and default scrape jobs.
 
 Learn more about the Prometheus Agent in [our documentation](https://docs.newrelic.com/docs/infrastructure/prometheus-integrations/install-configure-prometheus-agent/setup-prometheus-agent/).
 
