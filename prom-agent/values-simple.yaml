@@ -1,4 +1,3 @@
-
 fullnameOverride: "newrelic-prometheus-agent"
 cluster: "instruqt-cluster"
 customSecretName: "newrelic-license-key"
