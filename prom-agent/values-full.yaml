@@ -220,11 +220,9 @@ config:
     integrations_filter:
       # -- enabling the integration filters, merely the targets having one of the specified labels matching
       #    one of the values of app_values are scraped. Each job configuration can override this default.
+      # INSTRUQT: Challenge 2
       enabled: true
       # -- source_labels used to fetch label values in the relabel config added by the integration filters configuration
-      # INSTRUQT: Challenge 1
-      # Description: testing 1 2 3
-      #
       source_labels: ["app.kubernetes.io/name", "app.newrelic.io/name", "k8s-app"]
       # -- app_values used to create the regex used in the relabel config added by the integration filters configuration.
       # Note that a single regex will be created from this list, example: '.*(?i)(app1|app2|app3).*'
