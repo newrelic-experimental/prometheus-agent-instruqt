@@ -81,7 +81,7 @@ config:
 
   static_targets:
     jobs:
-    # # INSTRUQT: Challenge 5
+    # # INSTRUQT: Challenge 4
     # - job_name: instruqt-node-exporter
     #   targets:
     #     - "INSTRUQT_HOSTNAME:9100"
