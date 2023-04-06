@@ -1,0 +1,6 @@
+#!/bin/bash
+
+export FLUENTBIT_POD=$(kubectl get pods -n newrelic -o=jsonpath='{.items[*].metadata.name}{"\n"}' | tr ' ' '\n' | grep logging)
+#kubectl annotate pod $FLUENTBIT_POD -n newrelic prometheus.io/scrape="true"
+kubectl annotate pod $FLUENTBIT_POD -n newrelic prometheus.io/path="/api/v1/metrics/prometheus"
+kubectl annotate pod $FLUENTBIT_POD -n newrelic prometheus.io/port="2020"

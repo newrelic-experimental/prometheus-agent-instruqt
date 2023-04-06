@@ -1,0 +1,52 @@
+slug: kubernetes-prometheus-agent
+id: ldyr36efezyx
+title: Prometheus Agent for Kubernetes Lab
+teaser: Install and configure the Prometheus agent, because well, your metrics can't
+  collect themselves!
+description: |-
+  ### Prometheus Agent for Kubernetes Lab
+
+  This lab was designed to improve your understanding of the Prometheus Agent and how to make configuration changes that affect the metrics sent to New Relic.
+
+  ### In this lab, you will:
+
+
+  * Install the Prometheus Agent (and other New Relic components) into a Minikube cluster
+
+  * Work with Kubernetes labels and annotations to incrementally ingest new Prometheus metrics into your New Relic account
+
+  * View the data ingest in real-time with a supplemental New Relic dashboard specifically built for this Instruqt lab
+
+  * Configure the Prometheus Agent to scrape metrics from a static target requiring authentication
+
+  * Learn how to manipulate data ingest by dropping labels and metrics using Prometheus Agent configuration techniques
+
+  * Install a Prometheus Quickstart from the New Relic Quickstart library
+
+  ### Github repos
+
+  * https://github.com/newrelic-experimental/prometheus-agent-instruqt
+  * https://github.com/newrelic/newrelic-prometheus-configurator
+
+  ### Helpful resources
+
+  * [Prometheus Blog - Introducing Prometheus Agent Mode](https://prometheus.io/blog/2021/11/16/agent/)
+  * [New Relic Docs - Setup Prometheus Agent](https://docs.newrelic.com/docs/infrastructure/prometheus-integrations/install-configure-prometheus-agent/setup-prometheus-agent/)
+  * [New Relic Docs - Prometheus Agent - Advanced Configuration](https://docs.newrelic.com/docs/infrastructure/prometheus-integrations/install-configure-prometheus-agent/advanced-configuration/)
+  * [How Relabeling in Prometheus works](https://grafana.com/blog/2022/03/21/how-relabeling-in-prometheus-works)
+icon: https://cdn.instruqt.com/assets/templates/kubernetes.png
+level: beginner
+tags:
+- prometheus-agent
+- kubernetes
+owner: newrelic
+developers:
+- bschmitt@newrelic.com
+- radams@newrelic.com
+show_timer: true
+timelimit: 6000
+lab_config:
+  overlay: true
+  width: 33
+  position: right
+checksum: "13939941666382100864"

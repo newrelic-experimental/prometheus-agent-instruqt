@@ -1,0 +1,5 @@
+#!/bin/bash
+
+##kubectl get pods --selector=app.kubernetes.io/name=newrelic-prometheus-agent -n newrelic || fail-message "The Prometheus Agent has not been installed. Are you sure you deployed your Helm chart successfully?"
+
+kubectl get pods newrelic-prometheus-agent-0 -n newrelic || fail-message "The Prometheus Agent has not been installed. Are you sure you deployed your Helm chart successfully?"
