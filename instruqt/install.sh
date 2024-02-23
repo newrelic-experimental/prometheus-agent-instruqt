@@ -15,6 +15,16 @@ read -r value
 
 export NEW_RELIC_USER_KEY=$value
 
+printf 'Enter your New Relic Region (US/EU): '
+read -r value
+
+export NEW_RELIC_REGION="US"
+if [[ -z "$value" ]]; then
+    echo "No input detected, defaulting to US region"
+else
+    export NEW_RELIC_REGION=$value
+fi
+
 echo ""
 echo "Environment variables have been set! Let's roll..."
 echo ""
@@ -56,8 +66,17 @@ echo ""
 echo "--------------------------------------------------"
 echo ""
 
+# determine region specific endpoint
+region_prefix=''
+if [ $NEW_RELIC_REGION == "EU" ]; then
+    region_prefix='eu.'
+fi
+
+graphql_endpoint='https://api.'$region_prefix'newrelic.com/graphql'
+#echo "graphql_endpoint: ${graphql_endpoint}"
+
 ## Deploy the lab dashboard
-cat dashboard.txt | sed 's/REPLACE_ACCOUNT_ID/'$NEW_RELIC_ACCOUNT_ID'/g' | curl -H 'Content-Type: application/json' -H "API-Key: $NEW_RELIC_USER_KEY" -d @- https://api.newrelic.com/graphql > /dev/null 2>&1
+cat dashboard.txt | sed 's/REPLACE_ACCOUNT_ID/'$NEW_RELIC_ACCOUNT_ID'/g' | curl -H 'Content-Type: application/json' -H "API-Key: $NEW_RELIC_USER_KEY" -d @- $graphql_endpoint > /dev/null 2>&1
 
 if [ $? -ne 0 ]; then
     echo "Error creating dashboard!"
